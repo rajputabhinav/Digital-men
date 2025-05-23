@@ -1,0 +1,41 @@
+.process-step {
+    position: relative;
+    z-index: 0;
+  }
+  
+  .process-step::after {
+    content: "";
+    width: 8px;
+    height: 90%;
+    background-color: rgb(7, 7, 152);
+    position: absolute;
+    top: 3%;
+    left: -4%;
+    border-radius: 14px;
+    z-index:-1;
+  }
+
+  .step-no {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .step-no::after {
+    content: "";
+    width: 80px;
+    aspect-ratio: 1/1;
+    background-color: rgb(7, 7, 105);
+    border-radius: 50%;
+    position: absolute;
+    z-index:2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+@media (max-width:600px){
+    .process-step::after{
+        left: 6%;
+    }
+}

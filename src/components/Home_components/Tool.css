@@ -1,0 +1,21 @@
+.tool-container-main {
+    overflow: hidden;
+    width: 100%;
+    background-color: #f8faff;
+}
+
+.tool-container {
+    display: flex;
+    gap: 20px;
+    animation: scroll 40s linear infinite;
+    width: calc(250px*20);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Only -50%, because you have 2 copies */
+    }
+}

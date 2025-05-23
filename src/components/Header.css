@@ -1,0 +1,25 @@
+.underLine::after{
+     content: "";
+     height: 3px;
+     width: 80px;
+     background-color: white;
+     position: absolute;
+     top:40px;
+     left: 0px;
+}
+.quickLinks{
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.services:hover .services_dropdown{
+     visibility: visible;
+     opacity: 1;
+}
+
+@media (min-width:1450px){
+    .header{
+        width: 1450px;
+        margin: auto;
+    }
+}
