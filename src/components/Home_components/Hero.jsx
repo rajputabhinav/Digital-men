@@ -30,7 +30,7 @@ function Hero() {
   return (
     <div
       className="px-4 py-20 mt-30 lg:flex justify-around"
-     
+      style={{ background: "linear-gradient(135deg, #3089e3 0%,#233783 75%)" }}
     >
       <div className="text-white  lg:w-[50%] w-full max-w-xl m-auto">
         <h1 className=" text-[40px] text-center lg:text-start font-bold">
