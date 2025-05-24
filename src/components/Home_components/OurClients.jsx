@@ -16,7 +16,7 @@ import psit from "../../assets/clients/psit.png";
 import rankridge from "../../assets/clients/rankridge.png";
 import yashodahealthcare from "../../assets/clients/yashodahealthcare.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAdd } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 function OurClients() {
   const [toggle, setToggle] = useState(
     {
@@ -131,28 +131,21 @@ function OurClients() {
            {/* FQA Secton starts here */}
         <div className="md:w-[48%] w-[100%] mt-10 md:mt-0">
           <h1 className="text-[#000000c7] text-4xl font-bold mb-10">FAQ</h1>
-        <div
-          onClick={()=> toggleHandler("first")}
-          className={` w-full shadow-lg bg-white transition-all duration-500 ease-in-out border-1 cursor-pointer rounded overflow-hidden border-[#00000047] p-4  ${
-            toggle.first ? "max-h-[420px]" : "max-h-19"
-          }`}
-        >
+          {/* Question one */}
+        <div className={` w-full shadow-lg bg-white border-1 rounded overflow-hidden border-[#00000047]`}>
+        <div className="p-2 active:bg-blue-100 cursor-pointer" onClick={()=> toggleHandler("first")}>
           <p className="text-lg w-[80%] font-bold inline-block text-[#000000c1]">
             What industries or businesses do you specialize in?
           </p>
           <span className="float-right text-2xl transition-transform duration-300">
             <FontAwesomeIcon
               className={`transition-transform duration-300 ease-in-out ${toggle.first ? "rotate-45" : "rotate-90"}`}
-              icon={faAdd}
+              icon={faXmark}
             />
           </span>
-
+         </div>
           {/* Animated Answer Section */}
-          <div
-            className={`transition-all duration-500 ${
-              toggle.first ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
-            }`}
-          >
+          <div className={`p-2 text-base text-[#000000c9] transition-all duration-500 ${toggle.first?"max-h-[410px] translate-y-0":"max-h-[0px] translate-y-3"}`}>
             <p className="mt-5">
               We have experience working with businesses across diverse
               industries:
@@ -168,8 +161,8 @@ function OurClients() {
                 "Small and large private or public companies",
               ].map((item, i) => (
                 <li className="flex gap-2 mt-4" key={i}>
-                  <div className="w-5 h-5 flex justify-center rounded-[2px] bg-blue-500">
-                    <img src="Images/Icon/check.svg" width={15} />
+                  <div className="min-w-5 h-5 flex justify-center rounded-[2px] bg-blue-500">
+                    <img src="Images/Icons/check.svg" width={15} />
                   </div>
                   <p>{item}</p>
                 </li>
@@ -178,28 +171,21 @@ function OurClients() {
             </ul>
           </div>
         </div>
-        <div
-          onClick={()=> toggleHandler("second")}
-          className={` w-full shadow-lg bg-white  transition-all duration-500 ease-in-out border-1 cursor-pointer mt-4 rounded overflow-hidden border-[#00000047] p-4  ${
-            toggle.second ? "max-h-[390px]" : "max-h-20"
-          }`}
-        >
+        {/* Question two */}
+        <div className={` w-full shadow-lg bg-white border-1 mt-4 rounded overflow-hidden border-[#00000047]`}>
+         <div className="p-2 active:bg-blue-100 cursor-pointer"  onClick={()=> toggleHandler("second")}>
           <p className="text-lg w-[80%] font-bold inline-block text-[#000000c1]">
           How long does it take to see results from digital marketing?
           </p>
           <span className="float-right text-2xl transition-transform duration-300">
             <FontAwesomeIcon
               className={`transition-transform duration-300 ease-in-out ${toggle.second ? "rotate-45" : "rotate-90"}`}
-              icon={faAdd}
+              icon={faXmark}
             />
           </span>
-
+         </div>
           {/* Animated Answer Section */}
-          <div
-            className={`transition-all duration-500 ${
-              toggle.second ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
-            }`}
-          >
+          <div className={`p-2 text-base text-[#000000c9] transition-all duration-500 ${toggle.second?"max-h-[360px] translate-y-0":"max-h-[0px] translate-y-3"}`}>
             <p className="mt-5">
             The timeline varies depending on the strategy:
             </p>
@@ -211,8 +197,8 @@ function OurClients() {
                 "Content Marketing: 4–6 months for organic traction."
               ].map((item, i) => (
                 <li className="flex gap-2 mt-4" key={i}>
-                  <div className="w-5 h-5 flex justify-center rounded-[2px] bg-blue-500">
-                    <img src="Images/Icon/check.svg" width={15} />
+                  <div className="min-w-5 h-5 flex justify-center rounded-[2px] bg-blue-500">
+                    <img src="Images/Icons/check.svg" width={15} />
                   </div>
                   <p>{item}</p>
                 </li>
@@ -220,28 +206,21 @@ function OurClients() {
             </ul>
           </div>
         </div>
-        <div
-          onClick={()=> toggleHandler("third")}
-          className={` w-full shadow-lg bg-white  transition-all duration-500 ease-in-out border-1 cursor-pointer mt-4 rounded overflow-hidden border-[#00000047] p-4  ${
-            toggle.third ? "max-h-[390px]" : "max-h-20"
-          }`}
-        >
+        {/* Question three */}
+        <div className={` w-full shadow-lg bg-white border-1 cursor-pointer mt-4 rounded overflow-hidden border-[#00000047]`}>
+          <div className="p-2 active:bg-blue-100 cursor-pointer" onClick={()=> toggleHandler("third")}>
           <p className="text-lg w-[80%] font-bold inline-block text-[#000000c1]">
           How will digital marketing benefit my business?
           </p>
           <span className="float-right text-2xl transition-transform duration-300">
             <FontAwesomeIcon
               className={`transition-transform duration-300 ease-in-out ${toggle.third ? "rotate-45" : "rotate-90"}`}
-              icon={faAdd}
+              icon={faXmark}
             />
           </span>
-
+         </div>
           {/* Animated Answer Section */}
-          <div
-            className={`transition-all duration-500 ${
-              toggle.third ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
-            }`}
-          >
+          <div className={`p-2 text-base text-[#000000c9] transition-all duration-500 ${toggle.third?"max-h-[360px] translate-y-0":"max-h-[0px] translate-y-3"}`}>
             <p className="mt-5">
             Digital marketing helps:
             </p>
@@ -254,8 +233,8 @@ function OurClients() {
                 "Reach and engage your audience on various platforms effectively."
               ].map((item, i) => (
                 <li className="flex gap-2 mt-4" key={i}>
-                  <div className="w-5 h-5 flex justify-center rounded-[2px] bg-blue-500">
-                    <img src="Images/Icon/check.svg" width={15} />
+                  <div className="min-w-5 h-5 flex justify-center rounded-[2px] bg-blue-500">
+                    <img src="Images/Icons/check.svg" width={15} />
                   </div>
                   <p>{item}</p>
                 </li>
@@ -263,58 +242,40 @@ function OurClients() {
             </ul>
           </div>
         </div>
-        <div
-          onClick={()=> toggleHandler("fourth")}
-          className={` w-full shadow-lg bg-white  transition-all duration-500 ease-in-out border-1 cursor-pointer mt-4 rounded overflow-hidden border-[#00000047] p-4  ${
-            toggle.fourth ? "max-h-[390px]" : "max-h-20"
-          }`}
-        >
+        {/* Question four */}
+        <div className={` w-full shadow-lg bg-white border-1 mt-4 rounded overflow-hidden border-[#00000047]`}>
+          <div className="p-2 active:bg-blue-100 cursor-pointer" onClick={()=> toggleHandler("fourth")}>
           <p className="text-lg w-[80%] font-bold inline-block text-[#000000c1]">
           Can you work with businesses of all sizes and industries?
           </p>
           <span className="float-right text-2xl transition-transform duration-300">
             <FontAwesomeIcon
               className={`transition-transform duration-300 ease-in-out ${toggle.fourth ? "rotate-45" : "rotate-90"}`}
-              icon={faAdd}
+              icon={faXmark}
             />
           </span>
-
+          </div>
           {/* Animated Answer Section */}
-          <div
-            className={`transition-all duration-500 ${
-              toggle.fourth ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
-            }`}
-          >
-           <div className="mt-5 text-base text-[#000000c9]">
+           <div className={`p-2 text-base text-[#000000c9] transition-all duration-500 ${toggle.fourth?"max-h-[180px] translate-y-0":"max-h-[0px] translate-y-3"}`}>
             <p>Yes, we have experience working with small startups, medium-sized enterprises, and large public and private companies across various industries. Our strategies are customized to meet the unique needs of each business.</p>
            </div>
-          </div>
         </div>
-        <div
-          onClick={()=> toggleHandler("fifth")}
-          className={` w-full shadow-lg bg-white  transition-all duration-500 ease-in-out border-1 cursor-pointer mt-4 rounded overflow-hidden border-[#00000047] p-4  ${
-            toggle.fifth ? "max-h-[390px]" : "max-h-20"
-          }`}
-        >
+        {/* Question five */}
+        <div className={` w-full  shadow-lg bg-white   border-1 mt-4 rounded overflow-hidden border-[#00000047]`}>
+         <div className="active:bg-blue-100 p-2 cursor-pointer"  onClick={()=> toggleHandler("fifth")}>
           <p className="text-lg w-[80%] font-bold inline-block text-[#000000c1]">
           How do you measure the success of a digital marketing campaign?
           </p>
           <span className="float-right text-2xl transition-transform duration-300">
             <FontAwesomeIcon
               className={`transition-transform duration-300 ease-in-out ${toggle.fifth ? "rotate-45" : "rotate-90"}`}
-              icon={faAdd}
+              icon={faXmark}
             />
           </span>
-
+          </div>
           {/* Animated Answer Section */}
-          <div
-            className={`transition-all duration-500 ${
-              toggle.fifth ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
-            }`}
-          >
-             <div className="mt-5 text-base text-[#000000c9]">
+          <div className={` p-2 text-base text-[#000000c9] transition-all duration-500 ${toggle.fifth?"max-h-[180px] translate-y-0":"max-h-[0px] translate-y-2"}`}>
             <p>We use key performance indicators (KPIs) such as ROI, website traffic, conversion rates, cost-per-lead (CPL), engagement rates, and search engine rankings to measure success and provide detailed performance reports.</p>
-           </div>
           </div>
         </div>
         </div>
