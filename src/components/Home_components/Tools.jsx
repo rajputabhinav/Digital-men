@@ -5,12 +5,13 @@ import './Tool.css'
 function Tools() {
   useEffect(()=>{
     AOS.init({
-      duration:1000
+      duration:1200
     })
   })
   return (
     <div className='tool-container-main py-20 mt-15'>
       <h1 className='text-4xl font-bold text-center mb-14 text-[#000000c6]'>TOOLS & TECHNOLOGIES</h1>
+      <div data-aos="zoom-out">
       <div className='flex gap-5 tool-container'>
         {
           [1,2].map((_,index)=>(
@@ -66,7 +67,7 @@ function Tools() {
               img2:"looker"
             }
           ].map((data,i)=>(
-            <div className='w-64 h-36 flex flex-col justify-between text-base  text-white tool-item' key={i} data-aos="zoom-out">
+            <div className='w-64 h-36 flex flex-col justify-between text-base  text-white tool-item' key={i}>
             <div className='w-full bg-blue-900 rounded-sm px-5 py-3 h-15 flex gap-5 items-center '>
                 <img src={`Images/Logo/${data.img1}`} width={25}/>
                 <p>{data.brand1}</p>
@@ -79,6 +80,7 @@ function Tools() {
           ))
         ))
         }
+      </div>
       </div>
     </div>
     )
