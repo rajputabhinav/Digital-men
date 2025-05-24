@@ -119,16 +119,16 @@ function Services() {
                 <div className="text-white w-[100%]">
                   <h1 className=" text-2xl">{data.heading}</h1>
                   <p className="mt-3 md:text-lg">{data.discription}</p>
-                  <a
+                  <Link
                     className={`group/button px-4 py-3 bg-white text-blue-950 mt-5 inline-block rounded-2xl hover:bg-black hover:text-white ${transition}`}
-                    href={data.url}
+                    to={data.url}
                     data-aos="fade-right">
                     Learn More
                     <FontAwesomeIcon
                       className={`rotate-45 ml-1 group-hover/button:rotate-90 ${transition}`}
                       icon={faArrowUp}
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
