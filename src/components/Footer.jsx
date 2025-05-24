@@ -1,5 +1,6 @@
 import React from "react";
 import './Header.css'
+import {Link} from 'react-router-dom'
 function Footer() {
   return (
     <div className="bg-[#000720] text-white text-base overflow-hidden ">
@@ -37,20 +38,20 @@ function Footer() {
            <h1 className="font-bold text-2xl text-[#ffffff] relative mb-8 underLine">Quick Links</h1>
            <div className="flex justify-between">
             <ul>
-              <li className="quickLinks"><a href="/Seo">SEO</a></li>
-              <li className="quickLinks"><a href="/GoogleAds">Google Ads</a></li>
-              <li className="quickLinks"><a href="/MetaAds">Meta Ads</a></li>
-              <li className="quickLinks"><a href="/Website">Website</a></li>
-              <li className="quickLinks"><a href="/Social">Social</a></li>
-              <li className="quickLinks"><a href="/Communication">Communication</a></li>
+              <li className="quickLinks"><Link to="/Seo">SEO</Link></li>
+              <li className="quickLinks"><Link to="/GoogleAds">Google Ads</Link></li>
+              <li className="quickLinks"><Link to="/MetaAds">Meta Ads</Link></li>
+              <li className="quickLinks"><Link to="/Website">Website</Link></li>
+              <li className="quickLinks"><Link to="/Social">Social</Link></li>
+              <li className="quickLinks"><Link to="/Communication">Communication</Link></li>
             </ul>
             <ul>
-              <li className="quickLinks"><a href="/Branding">Branding</a></li>
-              <li className="quickLinks"><a href="/Audits">Audits</a></li>
-              <li className="quickLinks"><a href="/Consulting">Consulting</a></li>
-              <li className="quickLinks"><a href="/About">About</a></li>
-              <li className="quickLinks"><a href="/Approach">Our Approach</a></li>
-              <li className="quickLinks"><a href="">Updates</a></li>
+              <li className="quickLinks"><Link to="/Branding">Branding</Link></li>
+              <li className="quickLinks"><Link to="/Audits">Audits</Link></li>
+              <li className="quickLinks"><Link to="/Consulting">Consulting</Link></li>
+              <li className="quickLinks"><Link to="/About">About</Link></li>
+              <li className="quickLinks"><Link to="/Approach">Our Approach</Link></li>
+              <li className="quickLinks"><Link to="">Updates</Link></li>
             </ul>
            </div>
         </div>
