@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom'
 function Footer() {
   return (
     <div className="bg-[#000720] text-white text-base overflow-hidden ">
-      <div className="flex flex-wrap lg:flex-nowrap justify-between">
-        <div className="lg:w-[20%] w-[30%] min-w-90 m-auto lg:m-0 px-4 pt-[90px]">
+      <div className="flex flex-wrap lg:flex-nowrap lg:justify-between">
+        <div className="lg:w-[20%] w-[30%] min-w-90  lg:m-0 px-4 pt-[90px]">
           <ul>
             <li>
               <div className="flex items-center gap-3">
@@ -34,7 +34,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="lg:w-[35%] w-[40%] min-w-90 m-auto px-4 lg:m-0  pt-[90px]">
+        <div className="lg:w-[30%] w-[40%] min-w-90  px-4 lg:m-0  pt-[90px]">
            <h1 className="font-bold text-2xl text-[#ffffff] relative mb-8 underLine">Quick Links</h1>
            <div className="flex justify-between">
             <ul>
