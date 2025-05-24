@@ -15,14 +15,14 @@ function Testimonial() {
         })
     },[])
   return (
-    <div className='w-full h-fit py-20'>
+    <div className='w-full  h-fit py-20'>
         <h1 className='text-4xl font-bold text-center mb-16'>WHAT OUR CLIENT SAY</h1>
-        <div className='w-full min-h-[330px] relative  mt-16'>
+        <div className='w-full min-h-[330px] relative  mt-16' data-aos="zoom-out">
              <div className='custom-next  absolute left-[50%] -translate-x-[120%] hover:bg-blue-900 transition-all duration-400 bg-blue-100 w-13 h-13 text-center pt-4 rounded-full  bottom-0 z-3 text-sm cursor-pointer'><FontAwesomeIcon icon={faLessThan}/></div>
             <div className='custom-prev  absolute right-[50%] translate-x-[120%] hover:bg-blue-900 transition-all duration-400 bg-blue-100 w-13 h-13 text-center pt-4 rounded-full bottom-0 z-3 text-sm cursor-pointer'><FontAwesomeIcon icon={faGreaterThan}/></div>
         <Swiper 
         modules={[Navigation,Autoplay]}
-        spaceBetween={10}
+        spaceBetween={30}
         slidesPerView={1}
         speed={1500}
         autoplay={{delay:1200}}
@@ -43,7 +43,7 @@ function Testimonial() {
         }}
         >
          <SwiperSlide>
-            <div className='w-full p-4' data-aos="zoom-out">
+            <div className='w-full p-4'>
                 <div>
                     <img src="Images/Icons/quito2.svg"/>
                 </div>
@@ -64,7 +64,7 @@ function Testimonial() {
             </div>
          </SwiperSlide>
          <SwiperSlide>
-            <div className='w-full p-4' data-aos="zoom-out">
+            <div className='w-full p-4'>
                 <div>
                     <img src="Images/Icons/quito2.svg"/>
                 </div>
@@ -86,7 +86,7 @@ function Testimonial() {
             </div>
          </SwiperSlide>
          <SwiperSlide>
-            <div className='w-full p-4' data-aos="zoom-out">
+            <div className='w-full p-4'>
                 <div>
                     <img src="Images/Icons/quito2.svg"/>
                 </div>
@@ -107,7 +107,7 @@ function Testimonial() {
             </div>
          </SwiperSlide>
          <SwiperSlide>
-            <div className='w-full p-4' data-aos="zoom-out">
+            <div className='w-full p-4'>
                 <div>
                     <img src="Images/Icons/quito2.svg"/>
                 </div>
@@ -128,7 +128,7 @@ function Testimonial() {
             </div>
          </SwiperSlide>
          <SwiperSlide>
-            <div className='w-full p-4' data-aos="zoom-out">
+            <div className='w-full p-4'>
                 <div>
                     <img src="Images/Icons/quito2.svg"/>
                 </div>
@@ -149,7 +149,7 @@ function Testimonial() {
             </div>
          </SwiperSlide>
          <SwiperSlide>
-            <div className='w-full p-4' data-aos="zoom-out">
+            <div className='w-full p-4'>
                 <div>
                     <img src="Images/Icons/quito2.svg"/>
                 </div>
