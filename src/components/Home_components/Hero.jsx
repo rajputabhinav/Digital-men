@@ -29,10 +29,11 @@ function Hero() {
   const spinItemClass="bg-white lg:absolute flex lg:float-left justify-center items-center lg:w-20 w-24 aspect-square p-5 rounded-full"
   return (
     <div
-      className="px-4 py-20 mt-30 lg:flex justify-around"
+      className=" relative hero-container z-0"
       style={{ background: "linear-gradient(135deg, #3089e3 0%,#233783 75%)" }}
     >
-      <div className="text-white  lg:w-[50%] w-full max-w-xl m-auto">
+      <div className="px-4 py-24 mt-36 lg:flex gap-28 max-w-[1440px] m-auto">
+        <div className="text-white lg:w-[45%]  w-full max-w-xl m-auto lg:m-0">
         <h1 className=" text-[40px] text-center lg:text-start font-bold">
           We Grow Brands Online
         </h1>
@@ -46,7 +47,7 @@ function Hero() {
               key={i}
             >
               <div className="bg-white flex w-18 lg:w-14 aspect-square justify-center items-center rounded-full">
-                <img className="lg:w-7 lg:h-7 w-11 h-11" src={`Images/Icon/${data.image}`}/>
+                <img className="lg:w-7 lg:h-7 w-11 h-11" src={`Images/Icons/${data.image}.svg`}/>
               </div>
               <div className="md:text-start text-center">
                 <h1 className="text-2xl font-bold">{data.heading}</h1>
@@ -107,6 +108,7 @@ function Hero() {
           </div>
           <img src="Images/Icons/share.svg"/>
         </div>
+      </div>
       </div>
     </div>
   );

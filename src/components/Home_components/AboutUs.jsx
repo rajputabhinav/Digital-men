@@ -3,6 +3,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowDown} from '@fortawesome/free-solid-svg-icons'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {Link} from 'react-router-dom'
 function AboutUs() {
 
     useEffect(()=>{
@@ -34,7 +35,7 @@ function AboutUs() {
                         <p className='text-white md:text-blue-900'>Data and Analytics</p>
                     </div>
                     </div>
-                    <a className='bg-[#101082] text-white px-5 py-3 font-bold block sm:inline text-center w-full max-w-[400px] m-auto' data-aos="fade-right" href=''>More About Us <FontAwesomeIcon className='rotate-240' icon={faArrowDown}/></a>
+                    <Link className='bg-[#101082] text-white px-5 py-3 font-bold block sm:inline text-center w-full max-w-[400px] m-auto' data-aos="fade-right" to="/About">More About Us <FontAwesomeIcon className='rotate-240' icon={faArrowDown}/></Link>
                 </div>
                 <div className='md:flex relative w-[40%] lg:w-[50%] lg:flex-row md:flex-col md:items-center   hidden' data-aos="zoom-in">
                     <img className=' w-[95%] lg:w-[52%]  rounded-full lg:self-start' src="Images/about-1.jpg"/>

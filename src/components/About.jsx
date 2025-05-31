@@ -12,7 +12,7 @@ import Contact_us from "./templates/Contact_us";
 const textSize="text-3xl md:text-[40px]"
 function About() {
   const heading = "About Us";
-  const para = "Know More About Hire Digital Guru Services & Offerings";
+  const para = "Know More About  Digital Men Services & Offerings";
   const contactHeading="LET’S TRANSFORM YOUR DIGITAL PRESENCE!";
   const contactPara="Partner with Hire Digital Guru today and take your business to the next level.";
   const contactAtag="Contact Us Today!"
@@ -29,10 +29,10 @@ function About() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-4 my-20">
         <div className=" flex flex-col justify-center order-2 md:order-1">
           <h1 className={`font-semibold ${textSize}`}>
-            ABOUT<span className="text-blue-900 ml-2">HIRE DIGITAL GURU</span>
+            ABOUT<span className="text-blue-900 ml-2">DIGITAL MEN</span>
           </h1>
           <p className="mt-10" data-aos="zoom-in">
-            Welcome to <strong>Hire Digital Guru</strong>, your trusted partner
+            Welcome to <strong>Digital Men</strong>, your trusted partner
             in
             <strong>
               digital marketing, website design & development, and complete
@@ -58,7 +58,7 @@ function About() {
         <div className="flex flex-col justify-center">
           <h1 className={`font-semibold ${textSize}`}>WHO WE ARE</h1>
           <p className="mt-10" data-aos="zoom-in">
-            At <strong>Hire Digital Guru</strong>, we are more than just a
+            At <strong>Digital Men</strong>, we are more than just a
             digital agency—we are strategists, innovators, and problem solvers
             committed to helping brands{" "}
             <strong>grow, scale, and succeed in the digital world.</strong>

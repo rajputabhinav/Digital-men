@@ -35,10 +35,10 @@ function Website() {
         <h1 className="text-3xl md:text-[40px] text-center font-semibold mb-15">
           OUR WEB DESIGN & DEVELOPMENT SERVICES
         </h1>
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
           {[
             {
-              image: "",
+              image: "custom-website-design.png",
               heading: "Custom Website Design",
               discription:
                 "A well-crafted website is the cornerstone of your digital brand. Our talented designers create custom websites that reflect your unique identity and deliver a smooth, engaging user experience.",
@@ -55,7 +55,7 @@ function Website() {
               ],
             },
             {
-              image: "",
+              image: "website-development-1.png",
               heading: "Website Development",
               discription:
                 "We develop fast, secure, and scalable websites using the latest technologies to ensure exceptional performance and reliability.",
@@ -72,7 +72,7 @@ function Website() {
               ],
             },
             {
-              image: "",
+              image: "e-commerce-website-development.png",
               heading: "E-Commerce Website Development",
               discription:
                 "Expand your online business with a fully optimized, high-converting e-commerce store designed to meet your specific needs.",
@@ -89,7 +89,7 @@ function Website() {
               ],
             },
             {
-              image: "",
+              image: "landing-page-design-development.png",
               heading: "Landing Page Design & Development",
               discription:"Boost your conversions with expertly crafted landing pages designed to capture leads and drive sales.",
               points: [
@@ -105,7 +105,7 @@ function Website() {
               ],
             },
             {
-              image: "",
+              image: "website-redesign-optimization.png",
               heading: "Website Redesign & Optimization",
               discription:"Give your existing website a powerful upgrade to enhance performance, usability, and visual appeal.",
               points: [
@@ -121,7 +121,7 @@ function Website() {
               ],
             },
             {
-              image: "",
+              image: "web-maintenance-support.png",
               heading: "Web Maintenance & Support",
               discription:
                 "Ensure your website stays secure, up-to-date, and fully functional with our reliable support and maintenance services.",
@@ -142,87 +142,6 @@ function Website() {
           ))}
         </div>
       </div>
-      {/* why choose us section */}
-      {/* <div className="w-full h-fit px-3 py-17">
-        <h1 className="text-4xl font-bold mb-22 text-center">
-          WHY CHOOSE HIRE DIGITAL GURU?
-        </h1>
-        <div className="flex md:flex-nowrap flex-wrap gap-19 md:h-80 w-full">
-          <div className="w-[80vw] h-[80vw] md:w-[50%] md:h-full m-auto  md:m-0" data-aos="fade-left">
-            <img
-              className=" rounded-full md:rounded-r-full md:rounded-l-none w-full h-full  object-cover"
-              src={why_choose_us}
-            />
-          </div>
-          <div data-aos="fade-up">
-            <div className="flex gap-2 items-center">
-              <div className="w-10 h-10">
-                <img src={google_partner_agency} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Google Partner Agency:
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  We leverage Google-certified strategies for maximum impact.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center mt-5 ">
-              <div className="w-10 h-10">
-                <img src={experince_15_years} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  15+ Years of Industry Experience:
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  Proven track record in delivering digital success stories.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center mt-5">
-              <div className="w-10 h-10">
-                <img src={compliance_security} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Client-Centric Approach
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  Every business is unique, and so are our tailored solutions.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center  mt-5">
-              <div className="w-10 h-10">
-                <img src={multi_channel} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Result-Oriented Strategies
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  We focus on ROI-driven campaigns that grow your business.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center  mt-5">
-              <div className="w-10 h-10">
-                <img src={multi_channel} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Result-Oriented Strategies
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  We focus on ROI-driven campaigns that grow your business.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <Tools/>
       <Contact_us contactHeading={contactHeading} contactPara={contactPara} contactAtag={contactAtag}/>
       <Footer/>

@@ -11,37 +11,31 @@ const transition="transition-all duration-500"
 function Services() {
   const serviceCradData = [
     {
-      logo: "meta_ad.png",
+      logo: "seo-23.png",
       heading: "Search Engine Optimization",
       discription:"Boost Keyword Rankings, CTR & Organic Traffic through our exceptional SEO strategies.",
       url:"/Seo"
     },
     {
-      logo: "meta_ad.png",
+      logo: "adwords.png",
       heading: "Google Ads",
       discription:"Get high-quality leads within lower CPC rates through our customized PPC campaign.",
       url:"/GoogleAds"
     },
     {
-      logo: "meta_ad.png",
-      heading: "Meta Ads",
-      discription:"Get a fascinating & functioning web structure to boost user-engagement & conversions.",
-      url:"/MetaAds"
-    },
-    {
-      logo: "meta_ad.png",
+      logo: "website-development.png",
       heading: "Website Development",
       discription:"Connect with your target audience over social media to build strong connection.",
       url:"/Website"
     },
     {
-      logo: "meta_ad.png",
+      logo: "marketing.png",
       heading: "Social Media Marketing",
       discription:"Turn your every visitor into leads and then customer using our customized CRO Techniques.",
       url:"/Social"
     },
     {
-      logo: "meta_ad.png",
+      logo: "campaingns-audit.png",
       heading: "Campaigns Audits",
       discription:"Start your training from our Digital Guru’s to enhance your internet marketing skills.",
       url:"/Audit"

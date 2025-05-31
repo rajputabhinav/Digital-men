@@ -19,7 +19,7 @@ function ServiceCard(props) {
         }}
       >
         <div className="ml-2 mb-4 bg-[#ffffff] group-hover:-translate-y-2 rounded-4xl w-[82px] h-[82px] flex justify-center items-center transition-all duration-500">
-          <img className="w-[42px] h-[42px]" src={props.data.image} />
+          <img className="w-[42px] h-[42px]" src={`Images/Icons/${props.data.image}`}/>
         </div>
         <h1 className="text-white text-xl mb-2">{props.data.heading}</h1>
         <span className="group-hover:bg-blue-900 inline-block group-hover:-translate-y-1 px-2  py-1  text-sm rounded text-white border-b-1 border-b-white transition-all duration-500">

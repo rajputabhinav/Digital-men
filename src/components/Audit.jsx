@@ -42,10 +42,10 @@ function Audit() {
         <h1 className={headingClasses}>
           WHAT OUR DIGITAL MARKETING AUDIT COVERS
         </h1>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-5 mt-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-14">
           {[
             {
-              image: "",
+              image: "google-partner-agency.png",
               heading: "Google Ads Audit",
               discription:
                 "Set your campaigns up for success with our detailed analysis:",
@@ -75,7 +75,7 @@ function Audit() {
               ],
             },
             {
-              image: "",
+              image: "meta-ads-1.png",
               heading: "Meta Ads (Facebook & Instagram) Audit",
               discription:
                 "Maximize your social media advertising with our expert approach.",
@@ -107,7 +107,7 @@ function Audit() {
               ],
             },
             {
-              image: "",
+              image: "seo-audit.png",
               heading: "SEO Audit",
               discription:
                 "Take control of search rankings with a robust SEO strategy:",
@@ -137,7 +137,7 @@ function Audit() {
               ],
             },
             {
-              image: "",
+              image: "website-audit-1.png",
               heading: "Website Audit",
               discription:
                 "Your website is your digital storefront—make it fast, user-friendly, and optimized for conversions:",
@@ -169,87 +169,6 @@ function Audit() {
           ))}
         </div>
       </div>
-      {/* why choose us section */}
-      {/* <div className="w-full h-fit px-3 py-17">
-        <h1 className="text-4xl font-bold mb-22 text-center">
-          WHY CHOOSE HIRE DIGITAL GURU?
-        </h1>
-        <div className="flex md:flex-nowrap flex-wrap gap-19 md:h-80 w-full">
-          <div className="w-[80vw] h-[80vw] md:w-[50%] md:h-full m-auto  md:m-0" data-aos="fade-left">
-            <img
-              className=" rounded-full md:rounded-r-full md:rounded-l-none w-full h-full  object-cover"
-              src={why_choose_us}
-            />
-          </div>
-          <div data-aos="fade-up">
-            <div className="flex gap-2 items-center">
-              <div className="w-10 h-10">
-                <img src={google_partner_agency} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Google Partner Agency:
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  We leverage Google-certified strategies for maximum impact.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center mt-5 ">
-              <div className="w-10 h-10">
-                <img src={experince_15_years} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  15+ Years of Industry Experience:
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  Proven track record in delivering digital success stories.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center mt-5">
-              <div className="w-10 h-10">
-                <img src={compliance_security} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Client-Centric Approach
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  Every business is unique, and so are our tailored solutions.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center  mt-5">
-              <div className="w-10 h-10">
-                <img src={multi_channel} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Result-Oriented Strategies
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  We focus on ROI-driven campaigns that grow your business.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center  mt-5">
-              <div className="w-10 h-10">
-                <img src={multi_channel} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Result-Oriented Strategies
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  We focus on ROI-driven campaigns that grow your business.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <Contact_us
         contactHeading={contactHeading}
         contactPara={contactPara}

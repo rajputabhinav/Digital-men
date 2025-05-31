@@ -11,15 +11,16 @@
     margin-top: 5px;
     font-size: 16px;
 }
+.dropDownNavLink::before{
+    content: "";
+    width: 2px;
+    height: 60px;
+    background-color: #ccc;
+    position: absolute;
+    left: -25px;
+}
 
 .services:hover .services_dropdown{
      visibility: visible;
      opacity: 1;
-}
-
-@media (min-width:1450px){
-    .header{
-        width: 1450px;
-        margin: auto;
-    }
 }

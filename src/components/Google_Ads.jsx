@@ -4,7 +4,6 @@ import "aos/dist/aos.css";
 import Header from "./Header";
 import HeroTemplate from "./templates/HeroTemplate";
 import ServiceCard from "./templates/ServiceCard";
-import service_img from "../assets/service_img3.png";
 import ProcessTemplate from "./templates/ProcessTemplate";
 import Contact_us from "./templates/Contact_us";
 import Footer from "./Footer";
@@ -125,10 +124,10 @@ function Google_Ads() {
             Your Free Audit Today!
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 ">
           {[
             {
-              image: service_img,
+              image: "google-search.svg",
               heading: "Search",
               points: [
                 {
@@ -138,7 +137,7 @@ function Google_Ads() {
               ],
             },
             {
-              image: service_img,
+              image: "google-analytics-banner.svg",
               heading: "Performance Max",
               points: [
                 {
@@ -148,7 +147,7 @@ function Google_Ads() {
               ],
             },
             {
-              image: service_img,
+              image: "gmail.svg",
               heading: "Demand Gen",
               points: [
                 {
@@ -158,7 +157,7 @@ function Google_Ads() {
               ],
             },
             {
-              image: service_img,
+              image: "remarketing-ads.png",
               heading: "Remarketing Ads",
               points: [
                 {
@@ -168,7 +167,7 @@ function Google_Ads() {
               ],
             },
             {
-              image: service_img,
+              image: "google-display.svg",
               heading: "Display",
               points: [
                 {
@@ -178,7 +177,7 @@ function Google_Ads() {
               ],
             },
             {
-              image: service_img,
+              image: "google_shopping.svg",
               heading: "Shoping Ads",
               points: [
                 {
@@ -188,14 +187,14 @@ function Google_Ads() {
               ],
             },
             {
-              image: service_img,
+              image: "google-video.svg",
               heading: "Video",
               points: [
                 { point: "Engage viewers on YouTube and drive conversions." },
               ],
             },
             {
-              image: service_img,
+              image:"local-services-ads.png",
               heading: "Local Services Ads",
               points: [
                 {
@@ -209,87 +208,6 @@ function Google_Ads() {
           ))}
         </div>
       </div>
-      {/* why choose us section */}
-      {/* <div className="w-full h-fit px-3 py-17">
-        <h1 className="text-4xl font-bold mb-22 text-center">
-          WHY CHOOSE HIRE DIGITAL GURU?
-        </h1>
-        <div className="flex md:flex-nowrap flex-wrap gap-19 md:h-80 w-full">
-          <div className="w-[80vw] h-[80vw] md:w-[50%] md:h-full m-auto  md:m-0" data-aos="fade-left">
-            <img
-              className=" rounded-full md:rounded-r-full md:rounded-l-none w-full h-full  object-cover"
-              src={why_choose_us}
-            />
-          </div>
-          <div data-aos="fade-up">
-            <div className="flex gap-2 items-center">
-              <div className="w-10 h-10">
-                <img src={google_partner_agency} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Google Partner Agency:
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  We leverage Google-certified strategies for maximum impact.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center mt-5 ">
-              <div className="w-10 h-10">
-                <img src={experince_15_years} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  15+ Years of Industry Experience:
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  Proven track record in delivering digital success stories.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center mt-5">
-              <div className="w-10 h-10">
-                <img src={compliance_security} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Client-Centric Approach
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  Every business is unique, and so are our tailored solutions.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center  mt-5">
-              <div className="w-10 h-10">
-                <img src={multi_channel} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Result-Oriented Strategies
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  We focus on ROI-driven campaigns that grow your business.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center  mt-5">
-              <div className="w-10 h-10">
-                <img src={multi_channel} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Result-Oriented Strategies
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  We focus on ROI-driven campaigns that grow your business.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
       {/* process component */}
       <div className="bg-[#f8faff] w-[100%] h-auto py-17">
         <h1 className={headingClasses}>
@@ -326,35 +244,35 @@ function Google_Ads() {
               className="md:w-[32%] w-[42%] px-3 py-2 text-center border-1 border-[#00000022] shadow-md text-blue-900"
               data-aos="fade-up"
             >
-              <img className="m-auto mb-3" src={"multi_channel"} width={60} />
+              <img className="m-auto mb-3" src="Images/Icons/account-structure-settings-1.png" width={60} />
               <p>Account Structure & Settings Review</p>
             </div>
             <div
               className="md:w-[32%] w-[42%] px-3 py-2 text-center border-1 border-[#00000022] shadow-md text-blue-900"
               data-aos="fade-up"
             >
-              <img className="m-auto mb-3" src={"multi_channel"} width={60} />
+              <img className="m-auto mb-3" src="Images/Icons/keyword-ad-copy-analysis.png" width={60} />
               <p>Keyword & Ad Copy Evaluation</p>
             </div>
             <div
               className="md:w-[32%] w-[42%] px-3 py-2 text-center border-1 border-[#00000022] shadow-md text-blue-900"
               data-aos="fade-up"
             >
-              <img className="m-auto mb-3" src={"multi_channel"} width={60} />
+              <img className="m-auto mb-3" src="Images/Icons/cost-effective.png" width={60} />
               <p>Bid & Budget Optimization Recommendations</p>
             </div>
             <div
               className="md:w-[32%] w-[42%] px-3 py-2 text-center border-1 border-[#00000022] shadow-md text-blue-900"
               data-aos="fade-up"
             >
-              <img className="m-auto mb-3" src={"multi_channel"} width={60} />
+              <img className="m-auto mb-3" src="Images/Icons/performance-tracking-analytics (1).png" width={60} />
               <p>Conversion Tracking & Analytics Assessment</p>
             </div>
             <div
               className="md:w-[32%] w-[42%] px-3 py-2 text-center border-1 border-[#00000022] shadow-md text-blue-900"
               data-aos="fade-up"
             >
-              <img className="m-auto mb-3" src={"multi_channel"} width={60} />
+              <img className="m-auto mb-3" src="Images/Icons/seo-mobile-optimized.png" width={60} />
               <p>Competitor Analysis & Benchmarking</p>
             </div>
           </div>

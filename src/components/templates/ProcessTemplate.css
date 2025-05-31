@@ -36,6 +36,6 @@
   
 @media (max-width:600px){
     .process-step::after{
-        left: 6%;
+        left: 5%;
     }
 }

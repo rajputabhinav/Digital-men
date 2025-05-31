@@ -4,17 +4,14 @@ import "aos/dist/aos.css";
 import Header from "./Header";
 import HeroTemplate from "./templates/HeroTemplate";
 import ServiceCard from "./templates/ServiceCard";
-import service_img from "../assets/service_img3.png";
 import ProcessTemplate from "./templates/ProcessTemplate";
 import Footer from "./Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Faq from "./templates/Faq";
 import Contact_us from "./templates/Contact_us";
-import QuickContact from "./templates/QuickContact";
 const fontSize="text-3xl md:text-[40px]"
 function Seo() {
-  const[quickContact,setQuickContact]=useState(false)
   const contactHeading = "READY TO BOOST YOUR SEO PERFORMANCE?";
   const contactPara =
     "Let’s discuss how we can take your online presence to the next level. Contact us today for a free consultation!";
@@ -114,10 +111,10 @@ function Seo() {
         <h1 className={`font-bold text-center mb-17 ${fontSize}`}>
           OUR SEO SERVICES
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
           {[
             {
-              image: service_img,
+              image: "seo-1.png",
               heading: "On-Page SEO",
               points: [
                 { point: "Keyword Research & Optimization" },
@@ -127,7 +124,7 @@ function Seo() {
               ],
             },
             {
-              image: service_img,
+              image: "seo-2.png",
               heading: "Off-Page SEO",
               points: [
                 { point: "High-Quality Link Building" },
@@ -136,7 +133,7 @@ function Seo() {
               ],
             },
             {
-              image: service_img,
+              image: "seo-3.png",
               heading: "Technical SEO",
               points: [
                 { point: "Website Audit & Technical Fixes" },
@@ -146,7 +143,7 @@ function Seo() {
               ],
             },
             {
-              image: service_img,
+              image: "local-seo.png",
               heading: "Local SEO",
               points: [
                 { point: "Google My Business (GMB) Optimization" },
@@ -159,87 +156,6 @@ function Seo() {
           ))}
         </div>
       </div>
-      {/* why choose us section */}
-      {/* <div className="w-full px-3 py-17">
-        <h1 className="text-4xl font-bold mb-22 text-center">
-          WHY CHOOSE HIRE DIGITAL GURU?
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-14 w-full">
-          <div className="w-[80vw] aspect-square md:w-[100%] md:h-full m-auto  md:m-0" data-aos="fade-left">
-            <img
-              className=" rounded-full md:rounded-r-full md:rounded-l-none w-full md:h-fit h-full object-cover"
-              src={why_choose_us}
-            />
-          </div>
-          <div className="w-full md:w-[100%]" data-aos="fade-up">
-            <div className="flex gap-2 items-center">
-              <div className="w-10 h-10">
-                <img src={google_partner_agency} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Google Partner Agency:
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  We leverage Google-certified strategies for maximum impact.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center mt-5 ">
-              <div className="w-10 h-10">
-                <img src={experince_15_years} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  15+ Years of Industry Experience:
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  Proven track record in delivering digital success stories.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center mt-5">
-              <div className="w-10 h-10">
-                <img src={compliance_security} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Client-Centric Approach
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  Every business is unique, and so are our tailored solutions.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center  mt-5">
-              <div className="w-10 h-10">
-                <img src={multi_channel} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Result-Oriented Strategies
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  We focus on ROI-driven campaigns that grow your business.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2 items-center  mt-5">
-              <div className="w-10 h-10">
-                <img src={multi_channel} />
-              </div>
-              <div>
-                <p className="text-base font-bold text-blue-950">
-                  Result-Oriented Strategies
-                </p>
-                <p className="text-[#000000d0] text-base">
-                  We focus on ROI-driven campaigns that grow your business.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
       {/* process component */}
       <div className="bg-[#f8faff] w-[100%] h-auto py-17">
         <h1 className={`font-bold text-center pb-10 ${fontSize}`}>
@@ -252,7 +168,6 @@ function Seo() {
         contactHeading={contactHeading}
         contactPara={contactPara}
         contactAtag={contactAtag}
-        setterMethod={setQuickContact}
       />
       {/* SEO Audit section  */}
       <div className="py-17 px-2 bg-[#f8faff]">
@@ -280,23 +195,23 @@ function Seo() {
           <div className=" flex flex-wrap gap-2 p-2 justify-center">
             {[
               {
-                image: "",
+                image: "highspeed.png",
                 discription: "Website Speed & Mobile Friendliness",
               },
               {
-                image: "",
+                image: "technical-support.png",
                 discription: "Technical SEO Issues (Broken Links, etc)",
               },
               {
-                image: "",
+                image: "backlink.png",
                 discription: "Backlink Profile & Domain Authority",
               },
               {
-                image: "",
+                image: "pagerank.png",
                 discription: "Keyword Rankings & Traffic Insights",
               },
               {
-                image: "",
+                image: "competitor-analysis.png",
                 discription: "Competitor Analysis & Growth Opportunities",
               },
             ].map((data,i) => (
@@ -304,7 +219,7 @@ function Seo() {
                   className="md:w-[32%] w-[42%] px-3 py-2 text-center border-1 border-[#00000022] shadow-md text-blue-900"
                   data-aos="fade-up" key={i}
                 >
-                  <img className="m-auto mb-3" src={"multi_channel"} width={60} />
+                  <img className="m-auto mb-3" src={`Images/Icons/${data.image}`} width={60} />
                   <p>{data.discription}</p>
                 </div>
             ))}
@@ -315,7 +230,6 @@ function Seo() {
       <div className="py-16">
         <h1 className={`text-center font-bold mb-10 ${fontSize}`}>FQA</h1>
         <Faq faqData={faqData}/>
-        <QuickContact  setQuickContact={setQuickContact} quickContact={quickContact}/>
       </div>
       <Footer />
     </div>

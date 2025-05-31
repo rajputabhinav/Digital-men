@@ -40,18 +40,13 @@ function Footer() {
             <ul>
               <li className="quickLinks"><Link to="/Seo">SEO</Link></li>
               <li className="quickLinks"><Link to="/GoogleAds">Google Ads</Link></li>
-              <li className="quickLinks"><Link to="/MetaAds">Meta Ads</Link></li>
               <li className="quickLinks"><Link to="/Website">Website</Link></li>
               <li className="quickLinks"><Link to="/Social">Social</Link></li>
-              <li className="quickLinks"><Link to="/Communication">Communication</Link></li>
             </ul>
             <ul>
-              <li className="quickLinks"><Link to="/Branding">Branding</Link></li>
               <li className="quickLinks"><Link to="/Audits">Audits</Link></li>
-              <li className="quickLinks"><Link to="/Consulting">Consulting</Link></li>
               <li className="quickLinks"><Link to="/About">About</Link></li>
               <li className="quickLinks"><Link to="/Approach">Our Approach</Link></li>
-              <li className="quickLinks"><Link to="">Updates</Link></li>
             </ul>
            </div>
         </div>
